@@ -20,7 +20,7 @@ function Todo() {
     };
 
     return (
-        <div className="bg-white min-w-96 p-6 rounded-xl shadow-lg flex flex-col justify-center items-center">
+        <div className="bg-white p-6 rounded-xl shadow-lg flex flex-col justify-center items-center max-w-full">
             <div className="flex gap-3 mb-5">
                 <input
                     className="border-2 rounded-lg pl-1 font-medium"
@@ -39,7 +39,7 @@ function Todo() {
                     <li
                         key={index}
                         className="flex justify-between items-center
-                         bg-gray-100 px-4 py-2 rounded-lg gap-x-3 min-w-100"
+                         bg-gray-100 px-4 py-2 rounded-lg gap-x-3 min-w-80 max-w-full"
                     >
                         <div className="text-gray-800">{todo.text}</div>
                         <div className="flex justify-center items-center gap-x-1">
